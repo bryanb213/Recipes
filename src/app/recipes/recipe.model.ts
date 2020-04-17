@@ -12,4 +12,4 @@ export class Recipe {
         this.imgPath = imgPath;
         this.ingredents = ingredents;
     }
-};
+}
