@@ -1,26 +1,36 @@
 <div class="row">
     <div class="col-xs-12">
-        <form action="">
+        <form (ngSubmit)="onAdd(f)" #f="ngForm">
             <div class="row">
                 <div class="col-sm-5 form-goup">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" #nameInput class="form-control" id="name">
+                        <input type="text" 
+                        class="form-control" 
+                        id="name"
+                        name="name"
+                        ngModel
+                        >
                     </div>
 
                 </div>
                 <div class="col-sm-3 form-goup">
                     <div class="form-group">
                         <label for="amount">Amount</label>
-                        <input type="number" #amountInput class="form-control" id="amount">
+                        <input type="number"
+                        name="amount"
+                        class="form-control" 
+                        id="amount"
+                        ngModel
+                        >
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <button class="btn btn-success" (click)="onAdd()">Add</button>
-                    <button class="btn btn-danger" (click)="onDelete()">Delete</button>
-                    <button class="btn btn-primary"(click)="onClear()">Clear</button>
+                    <button class="btn btn-success" type="submit">Add</button>
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                    <button class="btn btn-primary" type="submit">Clear</button>
                 </div>
             </div>
         </form>

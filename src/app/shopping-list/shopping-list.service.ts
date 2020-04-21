@@ -23,7 +23,7 @@ export class ShoppingListService {
   // shopping list
   ingredientAdded(ingredient: Ingredient) {
     this.ingredients.push(ingredient);
-    this.ingAdded.next(this.ingredients.slice());
+    this.ingAdded.next(this.ingredients);
   }
   // for adding ingredients to shopping list
   addIngredients(ingredients: Ingredient[]) {
