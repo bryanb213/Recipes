@@ -31,9 +31,9 @@
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <button class="btn btn-success" type="submit" [disabled]="!f.valid">Add</button>
-                    <button class="btn btn-danger" type="submit">Delete</button>
-                    <button class="btn btn-primary" type="submit">Clear</button>
+                    <button class="btn btn-success" type="submit" [disabled]="!f.valid">{{ edit ? 'Update' : 'Add'}}</button>
+                    <button class="btn btn-danger" type="button" (click)="onDelete()" *ngIf="edit">Delete</button>
+                    <button class="btn btn-primary" type="button" (click)="onClear()">Clear</button>
                 </div>
             </div>
         </form>

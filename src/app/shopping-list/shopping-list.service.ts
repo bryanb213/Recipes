@@ -14,6 +14,9 @@ export class ShoppingListService {
   // to add ingredient
   ingAdded = new Subject<Ingredient[]>();
 
+  // edit ingredient
+  editIng = new Subject<number>();
+
   constructor() { }
 
   // shopping list
@@ -31,6 +34,20 @@ export class ShoppingListService {
     //   this.ingredientAdded(i);
     // }
     this.ingredients.push(...ingredients);
+    this.ingAdded.next(this.ingredients.slice());
+  }
+
+  getIng(index: number) {
+    return this.ingredients[index];
+  }
+
+  updateIng(index: number, newIng: Ingredient) {
+    this.ingredients[index] = newIng;
+    this.ingAdded.next(this.ingredients.slice());
+  }
+
+  deleteIng(index: number) {
+    this.ingredients.splice(index, 1);
     this.ingAdded.next(this.ingredients.slice());
   }
 }

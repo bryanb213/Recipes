@@ -23,7 +23,7 @@ export class RecipeDetailComponent implements OnInit {
   }
 
   addRecipeToList(ingredients: Ingredient[]) {
-    this.recService.addRecipeToList(this.recipe.ingredents);
+    this.recService.addRecipeToList(this.recipe.ingredients);
   }
 
   editRecipe() {
