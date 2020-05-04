@@ -15,11 +15,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   onSave(){
-    this.dataStorageService.storeRecipes();  
+    this.dataStorageService.storeRecipes();
 }
 
-onCancel(){
-  
+onFetch(){
+  this.dataStorageService.fetchRecipes();
 }
 
 }

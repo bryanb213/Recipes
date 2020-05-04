@@ -11,6 +11,11 @@ export class DataStorageService {
         const recipes = this.recipeService.getRecipes();
         this.http.put('https://angularrecipe-b5d1c.firebaseio.com/recipes.json', recipes).subscribe(res => {
             console.log(res);
-        })
+        });
+    }
+    fetchRecipes(){
+        this.http.get('https://angularrecipe-b5d1c.firebaseio.com/recipes.json').subscribe(res => {
+            console.log(res);
+        });
     }
 }
