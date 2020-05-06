@@ -12,21 +12,40 @@ export class RecipeService {
   recipesChanged  = new Subject<Recipe[]>();
 
   recipes: Recipe[] = [
-    new Recipe('Veggie Burger',
-    'Burger made from vegetables',
-    'https://media.npr.org/assets/img/2019/02/08/vegan-burger-1_custom-69b8aeff56bf284ed1349c739dc345cf0336364d-s1200-c85.jpg',
+    new Recipe('Hearty Bolognese-Style Meat Sauce for Pasta',
+    'This hearty meat sauce is inspired by the classic ragù alla bolognese, which is a thick, meaty sauce that is simmered for hours with milk, red wine, and a couple of tablespoons or so of tomato paste—a surprisingly small amount of tomato by North America standards.',
+    'https://www.thespruceeats.com/thmb/oxzAQ4AIJu1fq8LA_lt1-ejoyNs=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/meat-sauce-spaghetti-2500-56dc8ae53df78c5ba053531b.jpg',
     [
-      new Ingredient('Meat', 1),
-      new Ingredient('Meater', 1),
-      new Ingredient('Meaty', 1),
+      new Ingredient('1/4 cup olive oil', 1),
+      new Ingredient('1 medium carrot (peeled and diced)', 1),
+      new Ingredient('1 medium onion (chopped)', 1),
+      new Ingredient('2 cloves garlic (finely minced)', 1),
+      new Ingredient('1/2 cup red wine', 1),
+      new Ingredient('1/2 cup beef stock', 1),
+      new Ingredient('1/2 pound ground beef chuck', 1),
+      new Ingredient('1/2 pound ground pork', 1),
+      new Ingredient('1 28-oz can whole tomatoes (with liquid)', 1),
+      new Ingredient('1/2 teaspoon oregano', 1),
+      new Ingredient('1/2 teaspoon basil', 1),
+      new Ingredient('1 teaspoon sugar', 1),
+      new Ingredient('Kosher salt and freshly ground black pepper, to taste', 1),
     ]),
 
-    new Recipe('Bootleg Veggie Burger',
-    'Burger made from vegetables',
-    'https://media.npr.org/assets/img/2019/02/08/vegan-burger-1_custom-69b8aeff56bf284ed1349c739dc345cf0336364d-s1200-c85.jpg',
+    new Recipe('SPICY SHOYU RAMEN',
+    'Easy homemade spicy shoyu ramen recipe. Top with soft boiled egg, fish cake, nori and fall-apart tender chashu, this delicious bowl of spicy delight will sure satisfy your ramen craving!',
+    'https://nitrocdn.com/KQYMGOLIdXGmoAcyJsPOrQDKktgCbwtG/assets/static/optimized/rev-6101272/wp-content/uploads/2020/04/Spicy-Shoyu-Ramen-2167-I.jpg',
     [
-      new Ingredient('Meats', 1),
-      new Ingredient('Meatsssssss', 1),
+      new Ingredient('2 servings ramen noodles', 1),
+      new Ingredient('1 Tbsp sesame oil (roasted)', 1),
+      new Ingredient('2 cloves garlic (minced)', 1),
+      new Ingredient('1½ inch ginger (minced)', 1),
+      new Ingredient('2 tsp Doubanjiang (spicy chili bean sauce/broad bean paste)', 1),
+      new Ingredient('2 cups chicken stock/broth', 1),
+      new Ingredient('2 cups dashi', 1),
+      new Ingredient('2½ Tbsp soy sauce', 1),
+      new Ingredient('½ Tbsp sake', 1),
+      new Ingredient('1½ tsp kosher/sea salt (use half for table salt)', 1),
+      new Ingredient('1 tsp sugar', 1),
     ])
   ];
 

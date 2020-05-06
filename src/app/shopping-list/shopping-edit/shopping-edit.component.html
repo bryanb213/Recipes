@@ -5,34 +5,22 @@
                 <div class="col-sm-5 form-goup">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" 
-                        class="form-control" 
-                        id="name"
-                        name="name"
-                        ngModel
-                        required
-                        >
+                        <input type="text" class="form-control" id="name" name="name" ngModel required>
                     </div>
-
                 </div>
                 <div class="col-sm-3 form-goup">
                     <div class="form-group">
                         <label for="amount">Amount</label>
-                        <input type="number"
-                        name="amount"
-                        class="form-control" 
-                        id="amount"
-                        ngModel
-                        required
-                        pattern="[1-9]*"
-                        >
+                        <input type="number" name="amount" class="form-control" id="amount" ngModel required
+                            pattern="[1-9]*">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <button class="btn btn-success" type="submit" [disabled]="!f.valid">{{ edit ? 'Update' : 'Add'}}</button>
-                    <button class="btn btn-danger" type="button" (click)="onDelete()" *ngIf="edit">Delete</button>
+                    <button class="btn btn-success" type="submit" style="margin-right: 5px;"
+                        [disabled]="!f.valid">{{ edit ? 'Update' : 'Add'}}</button>
+                    <button class="btn btn-danger" type="button" (click)="onDelete()" *ngIf="edit" style="margin-right: 5px;">Delete</button>
                     <button class="btn btn-primary" type="button" (click)="onClear()">Clear</button>
                 </div>
             </div>

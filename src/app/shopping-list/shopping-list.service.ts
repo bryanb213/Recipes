@@ -8,8 +8,8 @@ import { Subject } from 'rxjs';
 })
 export class ShoppingListService {
   private ingredients: Ingredient[] = [
-    new Ingredient('apple', 5),
-    new Ingredient('banana', 2),
+    // new Ingredient('apple', 5),
+    // new Ingredient('banana', 2),
   ];
   // to add ingredient
   ingAdded = new Subject<Ingredient[]>();
